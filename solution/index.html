@@ -3,12 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="100000" >
     <title>Мини-почта</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
-    <!-- Место решения -->
+    <div class="page">
+      <header class="page__header">
+        <nav class="nav-panel container">
+          <h1 class="nav-panel__logo col">Мини-почта</h1>
+
+          <div class="nav-panel__menus">
+            <ul class="top-menu unstyled-list">
+              <li class="top-menu__item top-menu__item_active"><a>Письма</a></li>
+              <li class="top-menu__item"><a>Написать</a></li>
+            </ul>
+
+            <ul class="top-menu unstyled-list" style="margin-left: auto;">
+              <li class="top-menu__item"> <a>@username</a> </li>
+              <li class="top-menu__item"> <a>Выход</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page__base">
+        <div class="main container">
+          <nav class="main_sidebar col">
+            <h2 class="main__header">Письма</h2>
+            <ul class="left-menu unstyled-list">
+              <li class="left-menu__item"><a>Непрочитанные</a></li>
+              <li class="left-menu__item left-menu__item_active"><a>Входящие</a></li>
+              <li class="left-menu__item"><a>Отправленные</a></li>
+            </ul>
+          </nav>
+
+          <div class="main__content">
+            <h2 class="main__header">Входящие</h2>
+            <ul class="message-list unstyled-list">
+              <li class="message-list__item">
+                <article class="message">
+                  <p class="message__header">
+                    <span class="message__user">
+                      <img class="message__avatar" src="images/avatar-1.png" alt="avatar"/>
+                      Barsik2007
+                    </span>
+                    <time class="message__date" datetime="28.08.2021">28.08.2021</time>
+                  </p>
+                  <p class="message__subject">Собрание всех котиков</p>
+                  <p class="message__text">Всем привет! Пересылаю распоряжение об организации всеобщего собрания.</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="page__footer">
+        <div class="container">
+          (C) Курс Web-программирования | ПГНИУ
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
