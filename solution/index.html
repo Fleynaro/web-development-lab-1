@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="refresh" content="100000" >
     <title>Мини-почта</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
@@ -31,7 +30,7 @@
 
       <main class="page__base">
         <div class="main container">
-          <nav class="main_sidebar col">
+          <nav class="main__sidebar col">
             <h2 class="main__header">Письма</h2>
             <ul class="left-menu unstyled-list">
               <li class="left-menu__item"><a>Непрочитанные</a></li>
@@ -54,6 +53,34 @@
                   </p>
                   <p class="message__subject">Собрание всех котиков</p>
                   <p class="message__text">Всем привет! Пересылаю распоряжение об организации всеобщего собрания.</p>
+                </article>
+              </li>
+
+              <li class="message-list__item">
+                <article class="message">
+                  <p class="message__header">
+                    <span class="message__user">
+                      <img class="message__avatar" src="images/avatar-2.png" alt="avatar"/>
+                      Judith
+                    </span>
+                    <time class="message__date" datetime="28.08.2021">28.08.2021</time>
+                  </p>
+                  <p class="message__subject">Красная точка</p>
+                  <p class="message__text">Всем мяу! Сегодня утром была найдена красная точка на кухне. Я гналась за ней больше часа, но она сбежала. Продолжаю наблюдение. В этот раз она не уйдёт. Думаю, надо ещё раз проверить под холодильником. Всё, я убежала, тут опять бегает солнечное пятно!</p>
+                </article>
+              </li>
+
+              <li class="message-list__item">
+                <article class="message">
+                  <p class="message__header">
+                    <span class="message__user">
+                      <img class="message__avatar" src="images/avatar-3.png" alt="avatar"/>
+                      angry_boss
+                    </span>
+                    <time class="message__date" datetime="26.08.2021">26.08.2021</time>
+                  </p>
+                  <p class="message__subject">Еда?</p>
+                  <p class="message__text">Нам надо что-то делать с нехваткой еды! Я голодаю... Я так больше не могу...</p>
                 </article>
               </li>
             </ul>

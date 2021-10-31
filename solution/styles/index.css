@@ -51,8 +51,14 @@ body {
 }
 
 .container {
-    width: var(--max-main-size);
-    margin: 0 auto;
+    margin: 0 var(--basic-indent);
+}
+
+@media screen and (min-width: 1128px) {
+    .container {
+        width: var(--max-main-size);
+        margin: 0 auto;
+    }
 }
 
 .page {
@@ -130,15 +136,19 @@ body {
     display: flex;
 }
 
+.main__sidebar {
+    flex-shrink: 0;
+}
+
 .main__content {
     margin-left: var(--basic-indent);
-    flex-grow: 1;
 }
 
 .main__header {
     font-size: var(--large-font-size);
     font-weight: normal;
     color: var(--gray-color);
+    margin: var(--basic-indent) 0;
 }
 
 .message {
@@ -147,6 +157,7 @@ body {
     padding: var(--basic-indent);
     border-radius: var(--main-rounding);
     background-color: var(--blue-gray-color);
+    margin-bottom: var(--basic-indent);
 }
 
 .message__header {
